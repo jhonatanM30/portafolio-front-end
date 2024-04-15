@@ -1,0 +1,107 @@
+section{
+    margin: 50px;   
+}
+
+
+section h1, #intro h2 { /* Complementa estilos en css general */ 
+  animation: cambioColor 3s infinite alternate; /* Cambia el color cada 5 segundos */  
+  text-align: center; 
+  margin: 0 0 15px 0;  /* Margen de 0 en la parte superior, 0 en la parte derecha, 10px en la parte inferior, 0 en la parte izquierda. */  
+    
+}
+
+@keyframes cambioColor {
+  0% {
+   color: #000;
+  }
+  50% {
+     color: #777;
+  }
+  100% {
+     color: #000;
+  }
+}
+
+
+.bienvenida {
+      background: url('https://cdn-3.expansion.mx/dims4/default/fddfcb0/2147483647/strip/true/crop/1374x764+0+0/resize/1200x667!/quality/90/?url=https%3A%2F%2Fcdn-3.expansion.mx%2F0f%2Fd3%2F311c6c2346209f0589482b6a6906%2Fbarberias-mexico.jpg') center/cover no-repeat; /* Fondo de imagen centrado y cubriendo */
+      height: 300px; /* Puedes ajustar la altura según tus necesidades */
+      display: flex;
+      justify-content: center;
+      align-items: center;  
+      border: 0.1px solid #333;      
+      border-radius: 7px; /* Bordes redondeados */
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);    
+}
+
+
+#contenedor-principal {  
+  padding: 5px;
+  text-align: center;
+  margin: 80px 30px; /* 80px para la parte superior e inferior, 30px para izquierda y derecha */ 
+}
+
+
+#diferenciales {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas pequeñas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.diferencial-card {
+      width: 200px;
+      padding: 10px;
+      text-align: center;
+      background-color: #f0f0f0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+      border: 0.1px solid #333;
+      margin: 20px;
+      transition: transform 0.5s ease-in-out; /* Transición suave de 0.5 segundos */
+}
+
+
+.diferencial-icon {
+      font-size: 30px;
+      margin-bottom: 20px;
+}
+
+.diferencial-card p{
+    margin: 10px;
+}
+
+.ubicacion{
+    margin-top: 50px;    
+}
+
+.ubicacion iframe{   
+      width:40%; 
+      height:300px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+      border: 0.1px solid #333;  
+}
+
+@media only screen and (max-width: 600px) {
+
+.bienvenida {
+height: 200px; /* Ajusta la altura del contenedor de bienvenida */
+}
+
+#contenedor-principal {
+margin: 40px 5%; /* Ajusta los márgenes superior e inferior en dispositivos pequeños */
+}
+
+#intro p, .diferencial-card p {     
+  font-size: 12px;   
+}
+
+.ubicacion iframe{   
+  width:100%; 
+  height:300px;
+ 
+}
+
+
+  
+}

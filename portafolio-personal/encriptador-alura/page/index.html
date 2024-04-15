@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>    
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+   
+</head>
+<body>
+    <header>
+        <h1>Encriptador Alura</h1>
+    </header>
+    <main>
+        <div class="form">           
+            <textarea id="texto" placeholder="Ingresa el texto aquí"></textarea>
+             <p><i class="botones-icon">🛈</i> Ingresar solo letras minusculas y sin acentos.</p>
+            <div class="botones">
+                <button onclick="ejecutar('encriptar')" class="encriptar">Encriptar <i class="botones-icon">🔐</i></button>
+                <button onclick="ejecutar('desencriptar')" class="desencriptar">Desencriptar <i class="botones-icon">🔓</i></button>
+            </div>
+        </div>
+        <div class="resultado">
+            <div class="imagen"></div>
+            <textarea id="resultado" placeholder="NINGÚN MENSAJE MOSTRADO" readonly></textarea>           
+        </div>
+       <div class="botones">
+          <button onclick="copiarResultado()" class="copiar"><i class="diferencial-icon">📋</i>Copiar</button>        
+        </div>
+    </main>
+    <footer>
+            <p>&copy copyright Jhonatan Alexander Cuesta Marin</p>
+    </footer>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

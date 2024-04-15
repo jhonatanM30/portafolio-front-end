@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #3498db, #2c3e50); /* Fondo con degradado */
+}
+
+.home-button {
+  position: fixed;
+  top: 20px; /* Ajusta la posición verticalmente */
+  right: 20px; /* Ajusta la posición horizontalmente */
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+   font-weight: bold;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#tituloJuego {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#valorInput {
+  width: calc(100% / 3);
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+#enviarBtn {
+  background-color: #3498db; /* Azul */
+  color: white;
+}
+
+#finalizarBtn {
+  background-color: #95a5a6; /* Gris */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}

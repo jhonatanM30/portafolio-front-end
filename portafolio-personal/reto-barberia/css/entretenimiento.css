@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #3498db, #2c3e50); /* Fondo con degradado */
+}
+
+
+#tituloJuego {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+#valorInput {
+  width: calc(100% / 3);
+  padding: 10px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  border-radius: 5px;  
+  border: 0.1px solid #333;
+}
+
+.botones {
+    display: flex; /* Utilizamos flexbox para alinear horizontalmente */
+}
+
+.botones button, #regresar-barberia {
+  padding: 10px 20px;
+  margin: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+
+#enviarBtn {
+  background-color: #3498db; /* Azul */
+  color: white;
+}
+
+#finalizarBtn {
+  background-color: #95a5a6; /* Gris */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#regresar-barberia { 
+  background: #333; /* Código hexadecimal para un negro claro */
+  color: white; /* Color del texto */ 
+  transition: background-color 0.3s; /* Transición suave para el cambio de color */
+}
+
+
+@media only screen and (max-width: 600px) {
+
+#tituloJuego {
+    font-size:14px;
+}
+
+
+
+.contenedor button, #regresar-barberia {
+  padding: 7px 12px;
+  margin: 10px; 
+  font-size: 10px;
+}
+
+#valorInput {
+  padding: 7px;
+}
+  
+}

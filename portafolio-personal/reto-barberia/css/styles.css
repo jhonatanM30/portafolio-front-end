@@ -1,0 +1,109 @@
+body {
+ background: radial-gradient(#f9f9f9, #f9f9f9, f0f0f0);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 15px;
+  background: #BBBBBB; /* Gris plomo */
+  padding: 5px 0px;  
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+  border: 0.1px solid #333; 
+  border-radius: 5px;  
+}
+
+
+.menu-principal{
+    width: 90%; /* Cambié el ancho a un porcentaje */
+    position: relative;
+    margin: 0 auto; /* centrar un div */
+}
+
+nav {
+  position: absolute;
+  top:110px;
+  right:0;
+}
+
+
+nav ul li {
+ display: inline;
+ margin: 0 0 0 15px;
+}
+
+nav a, section h1, #intro h2 {    
+  color: #000; /* Negro */
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  
+}
+
+ nav a:hover {
+       color: #777; /* Negro */ /* Cambia a color rojo al pasar el mouse */
+}
+
+
+.diferencial-card:hover, .card:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al 105% al pasar el ratón */
+}
+
+
+footer {
+      margin: 0 10px;
+      background: url('../imagenes/bg.jpg') center/cover no-repeat; /* Fondo de imagen centrado y cubriendo */    
+      text-align: center;
+      padding: 30px;
+      border-radius: 7px 7px 0 0; /* 5px para arriba y 0 para abajo */
+      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+   
+}
+
+
+footer img {
+  width: 100px;
+}
+
+footer p {  
+  color: #fff;
+  font-size: 12px;
+  margin: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+  header {
+    margin: 10px; /* Reduzco el margen en dispositivos pequeños */
+  }
+
+  
+  h1{
+        text-align: center;
+    }
+  
+  nav {
+    position: static; /* Vuelve a la posición estática para que aparezca debajo del logo */
+    margin-top: 10px; /* Añade un pequeño margen superior */
+    text-align: center; /* Centra los elementos en dispositivos pequeños */
+  }
+  
+  nav a, section h1, #intro h2 {    
+  color: #000; /* Negro */
+  font-weight: bold;
+  font-size: 12px;   
+}
+
+  nav ul {
+    padding: 0; /* Elimina el relleno de la lista */
+  }
+
+  nav ul li {
+    display: block; /* Cambia a un diseño de bloque para ocupar toda la pantalla */
+    margin: 5px 0; /* Añade un pequeño margen entre los elementos de la lista */
+  }
+}
+
+

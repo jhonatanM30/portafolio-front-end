@@ -1,0 +1,81 @@
+main{
+    width: 940px;
+    margin: 0 auto;    
+}
+
+form {
+    margin: 20px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box; /* Ajusta el box model para incluir el padding y border en el ancho total */
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 20%;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    background: #333; /* Código hexadecimal para un negro claro */
+    border:none;
+    border-radius: 5px;
+    transition: 0.5s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: black;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+   main {
+        width: 90%; /* Puedes ajustar el porcentaje según tus necesidades */
+    }
+
+    form label,
+    form legend {
+        font-size: 12px;
+    }
+
+    .input-padron {
+        width: 90%;
+    }
+
+    .enviar {
+        width: 100%;
+    }
+}
+
+
+

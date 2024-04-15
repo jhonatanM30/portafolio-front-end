@@ -1,0 +1,57 @@
+
+#cards {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas pequeñas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+}
+
+.card {
+  width: 15%;
+  background-color: #fff; /* Fondo blanco */
+  padding: 30px;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+  border: 0.1px solid #333; 
+  border-radius: 10px;  
+  transition: transform 0.5s ease-in-out; /* Transición suave de 0.5 segundos */
+  
+}
+
+
+.card h2, .card p{
+  color: #000; /* Negro */
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.card  p{
+  margin: 5px;
+  font-size: 12px;
+}
+
+
+.card:active {
+    border-color: #777;
+}
+
+
+.card img {
+  width: 100%;
+  margin-top: 10px;
+ 
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.card {
+  width: 30%; 
+}   
+
+.card h2, .card p{
+  font-size: 10px;
+}
+  
+}
